@@ -3,7 +3,16 @@
     padding: 0;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
+/*
 header {
     background-color: #0c0244;
     color: #fff;
@@ -89,7 +98,14 @@ input {
 .btn-2:hover {
     background-color: #585fa2;
 }
+*/
+body {
+    max-height: 100vh;
+}
 
+section {
+    background-color: #eee;
+}
 
 .frst-section-bg {
     background-color: #0f0c25;
@@ -141,9 +157,9 @@ input {
 }
 
 .btn-3 {
-    background-color: #ff01f2;
+    background-color: #ce0145;
     padding: 11px;
-    border-radius: 16px;
+    border-radius: 25px;
     border: none;
     margin-right: 15px;
     cursor: pointer;
@@ -157,7 +173,7 @@ input {
 .btn-4 {
     background: transparent;
     border: 2px solid rgb(28, 165, 211);
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 11px;
     margin-right: 15px;
     cursor: pointer;
@@ -199,7 +215,18 @@ input {
 .text-2 {
     flex: 1 1 100%;
     max-width: 50%;
+    padding: 10px;
 
+}
+
+.text-2 h3 {
+    font-size: 2rem;
+    font-family: 'poppins' sans-serif;
+}
+
+.text-2 h5 {
+    color: #e7005e;
+    line-height: 2;
 }
 
 .text-2 p {
@@ -207,21 +234,9 @@ input {
     padding: 0%;
     font-size: 1.0em;
     width: 55%;
+    font-family: 'roboto' sans-serif;
 
 }
-
-.text-2 h3 {
-    font-size: 3rem;
-    font-family: 'poppins' sans-serif;
-
-}
-
-
-.text-2 h5 {
-    color: #e7005e;
-    line-height: 2;
-}
-
 
 .card-container {
     display: flex;
@@ -353,14 +368,13 @@ input {
 
 
 .btn-6 {
-    height: 45px;
     border-radius: 20px;
     color: rgb(235, 221, 221);
     background: transparent;
     border: 2px, solid #585fa2;
     font: 16px;
     cursor: pointer;
-    font-weight: bold;
+
 
 }
 
@@ -371,8 +385,8 @@ input {
 
 .text-li {
     font-size: 1rem;
-    line-height: 6vh;
-    padding-left: 4%;
+
+
     list-style-type: none;
 }
 
@@ -414,6 +428,7 @@ input {
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
+    width: 100%;
 }
 
 .txt-4 button:hover {
@@ -426,7 +441,7 @@ span {
 
 .img-6 img {
     margin-top: 20px;
-    height: 50vh;
+    width: 50%;
 }
 
 .section-8 {
@@ -455,13 +470,13 @@ span {
 }
 
 .section-9 {
-    height: 20vh;
+
     background: linear-gradient(to right, #201a4b 70%, #82048d 100%);
     padding: 40px;
     border-radius: 16px;
     margin: 30px;
     margin-top: 5%;
-    height: 23vh;
+
 }
 
 .sec-9-txt {
@@ -476,13 +491,12 @@ span {
 }
 
 .btn-7 {
-    height: 45px;
-    width: 30%;
     border-radius: 20px;
     color: rgb(235, 221, 221);
-    background-color: #e7005e;
-    border: 0;
+    background-color: #ce0145;
+    border: 0px;
     font: 16px;
+    padding: 10px;
     cursor: pointer;
     margin-top: 10px;
     margin-right: 20px;
@@ -496,8 +510,6 @@ span {
 }
 
 .btn-8 {
-    height: 45px;
-    width: 30%;
     border-radius: 20px;
     color: rgb(235, 221, 221);
     background: transparent;
@@ -567,98 +579,202 @@ span {
     cursor: pointer;
 }
 
-
 @media screen and (max-width: 640px) {
-    header {
-        width: 99%;
-    }
 
-    body {
-        width: 100%;
-        min-width: 250%;
-        padding: 10px;
-    }
 
     .text {
-        font-size: 1.25em;
-        margin: 0;
-        line-height: 1.2;
-        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .button-1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .b-section,
+    .business-section a {
+        gap: 30px;
+        color: white;
+        font-size: 1rem;
     }
 
     .second-secs {
-        margin-top: 20px;
-    }
-
-    .img-2 {
-        width: 10%;
-        min-width: 100%;
-        max-width: 50%;
+        width: 100%;
     }
 
     .text-2 {
-        padding-left: 10%;
-        font-family: 'poppins' sans-serif;
-        font-size: 2rem;
+        width: 100%;
+        min-width: 350px;
+
+    }
+
+    .img-2 {
+        width: 90%;
     }
 
     .text-2 h5 {
-        font-size: 1.2em;
-        padding-left: 4%;
-    }
-
-    .text p {
-        font-size: 4;
-
-    }
-
-    .text-2 h3 {
-        font-size: 1.3em;
-        padding-left: 4%;
-    }
-
-    .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-        align-items: center;
-    }
-
-    .card {
-        width: 80%;
-    }
-
-    .card h3 {
         font-size: 2rem;
     }
 
-    .card p {
-        font-size: 3rem;
+    .text-2 h3 {
+        font-size: 2rem;
+        font-family: 'roboto', sans-serif;
+    }
+
+    .text-2 p {
+        font-size: 0.80rem;
+        min-width: 90%;
+        margin-top: 10px;
+        font-family: 'poppins', sans-serif;
+    }
+
+    .text-2 h6 {
+        font-size: 1rem;
+        line-height: 3;
+        color: #ce0145;
+    }
+
+    .card-container {
+        width: 70%;
+        margin-left: 10%;
+        min-width: 20px;
+    }
+
+    /*section-4 */
+    .section-4 {
+        padding: 10px;
     }
 
     .img-3 {
-        min-width: 60%;
+        width: 90%;
     }
 
-    .text-3 {
-        font-size: 1.55rem;
-        width: 500%;
-        min-width: 60%;
+    .text-3 h3 {
+        font-size: 1.8rem;
+        font-family: 'roboto', sans-serif;
     }
 
-    .text-5 {
-        font-size: 1.55rem;
+    .text-3 p {
+        font-size: 1em;
+        font-family: 'poppins', sans-serif;
+    }
+
+    .text-3 h6 {
+        font-size: 1em;
+        color: #ce0145;
+        line-height: 2;
+        font-family: 'poppins', sans-serif;
+    }
+
+    /*section-5 */
+    .section-5 {
+        padding: 10px;
+    }
+
+    .text-5 h5 {
+        color: #0c0244;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .text-5 h6 {
+        font-size: 1.2rem;
+        font-family: 'poppins';
+        color: #ce0145;
+        margin-top: 10px;
+
+    }
+
+    .img-4 img {
+        width: 400px;
+    }
+
+    /*section-6 */
+
+    .img-5 {
+        width: 300px;
+        margin-top: 40px;
+    }
+
+    .text-6 {
+        padding: 10px;
+    }
+
+    .text-6 h4 {
+        font-size: 1.0rem;
+        margin-bottom: 10px;
+        font-family: 'poppins';
+    }
+
+    .text-6 h2 {
+        font-size: 1.6rem;
+    }
+
+    .text-6 p {
+        margin-bottom: 10px;
+        font-size: 1.0rem;
+        min-width: 10%;
+    }
+
+    .lists {
+        line-height: 24px;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    .btn-6 {
+        width: 90%;
+        font-family: 'poppins', sans-serif;
         padding: 20px;
+    }
+
+    /*section-7*/
+    .section-7 {
+        width: 70%;
+    }
+
+    .txt-4 h2 {
+        font-size: 2rem;
+    }
+
+    .img-6 img {
+        width: 100%;
+        position: relative;
+        top: 20%;
+        height: 230px;
+        left: 16%;
+    }
+
+    /*section-8*/
+    .sec-8-head {
+        font-size: 1.16rem;
+    }
+
+    /* section-9*/
+
+
+    .sec-9-txt h1 {
+        font-size: 1.20rem;
+    }
+
+    .btn-7 {
+        min-width: 100%;
+    }
+
+    .btn-8 {
+        min-width: 100%;
+    }
+
+    /*section-10 */
+    .section-10 {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 80px;
 
     }
 
-
-    .section-8 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
 }
