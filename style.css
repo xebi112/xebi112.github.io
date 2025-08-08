@@ -197,6 +197,7 @@ section {
     height: auto;
 }
 
+/* section-2 */
 .second-secs {
     display: flex;
     justify-content: space-between;
@@ -283,6 +284,7 @@ section {
 
 }
 
+/* section-4 */
 .section-4 {
     display: flex;
     align-items: center;
@@ -306,6 +308,7 @@ section {
 
 }
 
+/* section-5 */
 .section-5 {
     display: flex;
     align-items: center;
@@ -327,6 +330,7 @@ section {
     width: 30em;
 }
 
+/* section-6 */
 .section-6 {
     display: flex;
     flex-wrap: wrap;
@@ -390,60 +394,66 @@ section {
     list-style-type: none;
 }
 
+/* section-7 */
 .section-7 {
     display: flex;
-    border-radius: 16px;
+    border-radius: 17px;
     flex-wrap: wrap;
     background-color: #1c114e;
     margin: 30px auto;
-    width: 80%;
-    gap: 30%;
+    width: 77%;
+    gap: 20%;
     font-family: 'roboto';
     padding: 40px;
     background: linear-gradient(to right, #0f0c25 70%, #82048d 100%);
     margin-top: 5%;
-
 }
 
 
+.txt-4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column
+}
 
-.section-7 h2 {
-    font-size: 2rem;
+.txt-4 h2 {
+    font-size: 3.34rem;
     color: #fff;
-    margin-bottom: 10px;
-}
-
-.txt-4 h4 {
-    color: #f9f9f9;
-    line-height: 2;
-}
-
-.txt-4 button {
-    padding: 0.75em 1.5em;
-    font-family: 'poppins', sans-serif;
-    border-radius: 20px;
-    color: rgb(235, 221, 221);
-    background-color: #e7005e;
-    border: 0;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.txt-4 button:hover {
-    background-color: azure;
+    margin-bottom: 20px;
 }
 
 span {
-    color: #e7005e;
+    color: #ce0145;
 }
 
-.img-6 img {
-    margin-top: 20px;
+.txt-4 h4 {
+    color: #fff;
+    font-family: 'poppins';
+    font-size: 1.rem;
+}
+
+.section-7 .img-6 img {
+    width: 300px;
+    margin-top: 100px;
+
+}
+
+.sec-7-btn {
+    font-family: 'roboto';
+    background-color: #e7005e;
+    line-height: 2px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 0;
     width: 50%;
 }
 
+.sec-7-btn:hover {
+    background-color: #eee;
+}
+
+
+/* section-8 */
 .section-8 {
     display: flex;
     flex-wrap: wrap;
@@ -741,11 +751,11 @@ span {
     }
 
     .img-6 img {
+        margin-top: 50px;
+    }
+
+    .sec-7-btn {
         width: 100%;
-        position: relative;
-        top: 20%;
-        height: 230px;
-        left: 16%;
     }
 
     /*section-8*/
